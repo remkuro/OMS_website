@@ -1,0 +1,247 @@
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  /* font-family: 'Poppins', sans-serif; */
+  transition:0.4s;
+}
+
+/*Body background and transition  */
+body{
+  background:  #0b0c0f;
+  min-height:1500px;
+  transition:0.4s;
+}
+
+/*Br/Break */
+.new-row, br {
+  display: block;
+  width: 100%;
+  height: 0px;
+}
+/*Header  */
+.header {
+  padding: 60px;
+  text-align: center;
+  color:rgb(246,245,240);
+  text-shadow: 20px 20px #333;
+  align-items:center;
+  justify-content: center;
+  line-height:15px;
+  
+}
+
+/* side navigation bar */
+.sidenav {
+  height: 100%;
+  width: 400;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  flex:1;
+}
+
+/*Colors nav options grey and centers it  */
+.sidenav a {
+  padding: 2px 62px 32px 62px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/*Grey links become white when hovered over  */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/*Heading is white  */
+.sidenav h3, img{
+  color: #f1f1f1;
+}
+
+/* Clearing floats after the columns */
+/* .row:after {
+  content: "";
+  display: table;
+  clear: both;
+} */
+
+/* Responsive layout */
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+
+
+.center{
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+/* Footer */
+
+#footer{
+  line-height: 45px;
+  display:flex;
+  flex-direction:row;
+  background-color:black;
+  color:white;
+  padding:40px;
+  box-shadow:inset 5px -5px 0px 5px rgba(0, 0, 0, 0.1);
+  text-shadow:2px 2px 2px #000000;
+}
+
+#footer a{
+  background-color:rgba(0,0,0,0.9);
+  color:white;
+  text-shadow:2px 2px 2px #000000;
+}
+#footer img:hover{
+  transform:rotate(360deg);
+  transition:0.6s;
+}
+.footer1{
+  margin-left:300px;
+  background-color:rgba(0,0,0,0.9);
+  color:white; 
+  padding:40px;
+  display:flex;
+  flex-direction:column;
+}
+.footer2{
+  margin-left:300px;
+  background-color:rgba(0,0,0,0.9);
+  color:white;
+  padding:40px;
+   display:flex;
+  flex-direction:column;
+}
+
+.info{
+  left:300px;
+  padding-top: 50px;
+  flex-direction: row;
+  background-color:#ffffff; 
+  color:#ebf0ff;
+  /* text-shadow:2px 2px 2px black; */
+}
+.heading{
+  left:300px;
+  justify-content: space-between;
+  width:1570px;
+  display: inline-block;
+  display:flex;
+  position:relative;
+}
+.results{
+  display:flex;
+  flex:1;
+}
+
+.info h1, h2{
+  color:#000000;
+  flex-direction: row;
+  text-transform: uppercase;
+  display: inline-block;
+}
+.info p{
+  color:#000000;
+}
+
+/*Makes sure the cards start a lil more on the right  */
+.main-content {
+  margin-left: 200px;  /* Same width as the sidebar */
+  padding: 10px;
+}
+
+
+.fade-in { animation: fadeIn 1s; }
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
+html,body{
+  margin:0 auto;
+  font-family:Arial;
+}
+
+ 
+.card{
+  flex:1;
+  margin:5px;
+  padding:5px;
+  text-align:left;
+  box-shadow:5px 5px 10px #000000;
+  background-color: #ffffff;
+  width:1580px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius:5px;
+  background-color:#ffffff;
+  box-shadow:1px 1px 3px #000000;
+}
+
+.card h3, p, div{
+  color:black;
+}
+.button{
+  color: black;
+  cursor: pointer;
+}
+.button:hover{
+  background-color:#b0c8e8;
+}
+
+#rightPanel{
+  flex:1;
+  float:right;
+
+}
+
+#output{
+  flex-wrap:wrap;
+}
+
+.c-item {
+  height: 800px;
+}
+
+.c-img {
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+}
+
+/* Pretty input search format */
+input[type=text]{
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+   border-radius: 20px;
+   border: 1px solid #2d9fd9;
+   width: 250px;
+   height: 30px;
+   padding-left: 10px;
+  }
+
+input[type=text]:focus {
+   outline: none;
+   border: 1px solid #282460;
+   color: #2d9fd9;
+}

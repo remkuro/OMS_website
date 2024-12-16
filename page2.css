@@ -1,0 +1,280 @@
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  /* font-family: 'Poppins', sans-serif; */
+  transition:0.4s;
+}
+
+/*Body background and transition  */
+body{
+  background:  #0b0c0f;
+  min-height:1500px;
+  transition:0.4s;
+}
+
+/*Br/Break */
+.new-row, br {
+  display: block;
+  width: 100%;
+  height: 0px;
+}
+/*Header  */
+.header {
+  padding: 60px;
+  text-align: center;
+  color:rgb(246,245,240);
+  text-shadow: 20px 20px #333;
+  align-items:center;
+  justify-content: center;
+  line-height:15px;
+
+}
+
+/* side navigation bar */
+
+.sidenav {
+  height: 100%;
+  width: 400;
+  position: fixed;
+  z-index: 1;
+  background-color: #111;
+  transition: 0.5s;
+  padding-top: 60px;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  /* flex:1; */
+   /* position:absolute; */
+}
+
+.sidenav a {
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding: 2px 62px 32px 62px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav h3, img{
+  color: #f1f1f1;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+/* Clearing floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout */
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+
+
+.center{
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+/* Footer */
+
+#footer{
+  line-height: 45px;
+  display:flex;
+  flex-direction:row;
+  background-color:black;
+  color:white;
+  padding:40px;
+  box-shadow:inset 5px -5px 0px 5px rgba(0, 0, 0, 0.1);
+  text-shadow:2px 2px 2px #000000;
+}
+
+#footer a{
+  background-color:rgba(0,0,0,0.9);
+  color:white;
+  text-shadow:2px 2px 2px #000000;
+}
+#footer img:hover{
+  transform:rotate(360deg);
+  transition:0.6s;
+}
+.footer1{
+  margin-left:300px;
+  background-color:rgba(0,0,0,0.9);
+  color:white; 
+  padding:40px;
+  display:flex;
+  flex-direction:column;
+}
+.footer2{
+  margin-left:300px;
+  background-color:rgba(0,0,0,0.9);
+  color:white;
+  padding:40px;
+   display:flex;
+  flex-direction:column;
+}
+
+
+.info{
+  left:300px;
+  padding-top: 50px;
+  flex-direction: row;
+  background-color:#ffffff; 
+  color:#ebf0ff;
+  /* text-shadow:2px 2px 2px black; */
+}
+.heading{
+  left:300px;
+  justify-content: space-between;
+  width:1570px;
+  display: inline-block;
+  display:flex;
+  position:relative;
+}
+.results{
+  display:flex;
+  flex:1;
+}
+
+.info h1, h2{
+  color:#000000;
+  flex-direction: row;
+  text-transform: uppercase;
+  display: inline-block;
+}
+.info p{
+  color:#000000;
+}
+/* .container{
+   left:300px;
+
+} */
+.info img{
+  width:277px; 
+  height:218px;
+  box-shadow:2px 2px 5px rgba(0, 0, 0, 1);
+  margin: 5px 5px 5px 10px;
+}
+/* .info img:hover{
+  width:377px; 
+  height:318px;
+  box-shadow:2px 2px 5px rgba(0, 0, 0, 1);
+}
+ */
+
+
+.info h1:hover{
+  letter-spacing:2px;
+  transition:0.5s;
+
+}
+
+.fade-in { animation: fadeIn 1s; }
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* .tag {
+  opacity: 0;
+  transform: translate(0, 10vh);
+  transition: all 1s; 
+}
+
+.tag.visible {
+  opacity: 1;
+  transform: translate(0, 0);
+} */
+
+
+html,body{
+  margin:0 auto;
+  font-family:Arial;
+}
+
+#footer{
+  background-color:#141414;
+  color:white;
+  /*position:fixed;*/
+  left: 0;
+  right: 0;
+  bottom:0px;
+}
+
+
+/* Container to hold the cards */
+.card-container {
+  display: flex;  /* Use flexbox for layout */
+  flex-wrap: wrap;  /* Allow wrapping to new lines */
+  justify-content: center;  /* Center the cards horizontally */
+  padding: 10px;  /* Optional padding for the container */
+}
+.card {
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 5px 5px 10px #000000;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px #000000;
+  flex: 1 1 calc(33.333% - 20px);  /* Responsive card width */
+  box-sizing: border-box;  /* Include padding and border in element's total width and height */
+}
+
+/*Makes sure the cards start a lil more on the right  */
+.main-content {
+  margin-left: 200px;  /* Same width as the sidebar */
+  padding: 10px;
+}
+
+.card h3, p, div{
+  color:black;
+}
+.button3{
+  color: black;
+  cursor: pointer;
+}
+.button3:hover{
+  background-color:#b0c8e8;
+}
+
+/* 
+.left{
+  float:left;
+  margin:20px;
+  border-radius:5px;
+  background-color:#ffffff;
+  box-shadow:2px 2px 2px #121111;
+  justify-content:left;
+  align-items:left;
+  text-align:left;
+
+} */
+#rightPanel{
+  flex:1;
+  float:right;
+
+}
+
+#output{
+  flex-wrap:wrap;
+}
+

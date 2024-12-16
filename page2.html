@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title> Data Info</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.4.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+  <!-- Library and JS -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="helper.js"></script>
+    <script src="script.js"></script>
+    <script src="page2.js"></script>
+    <link href="components.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="page2.css">
+    <script src="components.js"></script>
+
+
+<!-- Link for cards -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- SCRIPT -->
+<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">    
+  </script>
+  <!--  This is a font app for the icon-->
+  <script src="https://kit.fontawesome.com/92f16b5927.js" crossorigin="anonymous"></script>
+
+<!-- Nav Bar & Cover -->
+ <style>
+    /* Logo styling, when the file grabs the logo from the link, it overlaps with another img which is why background=image:none is needed */
+.carousel-control-prev-icon, .carousel-control-next-icon {
+      background-image: none;
+      font-size: 2rem;
+    }
+    .carousel-control-prev-icon {
+      color: #FFF;
+    }
+    .carousel-control-next-icon {
+      color: #FFFFFF;
+    }
+
+  </style>
+</head>
+
+<body onload="init()">
+  <!-- Navigation Bar-->
+  <div class="sidenav">
+     <img src="inventory.png"width="220"height="180" float="left">
+    <h3>SmartInventory</h3>
+    <br></br>
+    <a href="index.html"><i class="fi fi-rr-list-check"></i> Dashboard</a>
+    <a href="page1.html"><i class="fi fi-rr-box-dollar"></i> Manage Orders</a>
+    <a style="color:white" href="page2.html"><i  class="fi fi-rr-shopping-cart"></i> Inventory</a>
+    <a href="wip.html"><i class="fi fi-rr-user"></i> Customers</a>
+    <a href="wip.html"><i class="fi fi-rr-coins"></i> Transactions</a>
+    <a href="wip.html"><i class="fi fi-rr-ballot"></i> Reports</a>
+    <a href="wip.html"><i class="fi fi-rr-chart-line-up"></i></i> Data Analysis</a>
+    <a href="wip.html"><i class="fi fi-rr-settings-sliders"></i> Settings</a>
+
+  </div>
+
+
+<!--   Home Info -->
+  
+  <div class="info">
+    
+		<div left="3000px">
+			<h1 position="absolute"left="3000px">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp View Your Products</h1>
+ <hr>
+  <div style="margin-left:310px"  >
+  <!--Drop-down menu  -->
+  <select id="filterType" style="width:200px;">
+  <option>Select filter type</option>
+  <option value="status">Status</option>
+  <option value="type">Type</option>
+  <option value="name">Name</option>
+  </select>
+              <br></br>
+      <!--Search for an order -->
+              <input type="text" id="filterInput" placeholder="Search for an order" style="width:1510px" style ="border-radius: 12px; padding: 15px 32px;">
+              <a class="button"onclick="filter()"> Search </a>
+
+
+            </div>
+   <div class="main-content">
+      <div id='centerpanel' class='card-container'>
+        Center Panel
+      </div>
+   </div>
+
+    </div>
+    </div>
+     
+
+  </div>
+  <!-- Footer -->
+  <div id="footer" style="background-color:black">
+    <div class="footer1">
+
+    <hr>
+          <h2 style="color:white">
+            Copyright 2024 by MELONIE CHIU. All Rights Reserved.
+          </h2>
+    <hr>
+     <a href="https://www.instagram.com/remkuro/"> <img src="images/instagram.png"width="60"height="60"></a>
+     <a href="https://twitter.com/remkuro"> <img src="images/twitter.png"width="60"height="60"></a>
+        </div>
+     <div class="footer2">
+      <div>
+    <h2 style="color:white">Information Resources</h2>
+        <hr>
+        <a href="https://www.nyc.gov/site/nypd/index.page">me,myself,and I</a>
+        <a href="https://data.cityofnewyork.us/Health/New-York-City-Leading-Causes-of-Death/jb7j-dtam">3-day cramming is great</a>
+
+    </div> 
+  </div>
+  </div>
+</body>
+
+</html>

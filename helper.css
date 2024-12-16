@@ -1,0 +1,117 @@
+
+html,body{
+  margin:0 auto;
+  font-family:Arial;
+}
+.container{
+  display:flex;
+  padding:10px;
+  flex-wrap:wrap;
+  max-width: 2140px;
+
+}
+.center{
+  justify-content:center;
+  align-items:center;
+}
+
+nav{
+  background-color:cornflowerblue;
+}
+nav a{
+  color:black;
+  padding:10px;
+  flex:1;
+  text-decoration:none;
+  text-align:center;
+}
+nav a:hover{
+  color:white;
+}
+.subbanner{
+  background-color:rgb(200,225,255);
+}
+#banner{
+  background-color:blue;
+  color:white;
+}
+
+
+
+.highlight{
+  font-style:italic;
+  color:#f3e9e7;
+}
+.heading{
+  font-weight:bold;
+}
+.button3{
+  text-decoration:none;
+
+  cursor: pointer;
+}
+.button3:hover{
+  background-color:#eecc91;
+}
+
+.divider{
+  clear:both;
+}
+#leftPanel{
+  flex:1;
+}
+.left{
+  float:left;
+  margin:20px;
+  border-radius:5px;
+  background-color:#f3e9e7;
+  box-shadow:2px 2px 2px #121111;
+  justify-content:left;
+  align-items:left;
+  text-align:left;
+  
+}
+#rightPanel{
+  flex:1;
+}
+
+#output{
+  flex-wrap:wrap;
+}
+.fitted{
+  max-width:400px;
+  min-width:400px;
+  border-radius:5px;
+  background-color:#f3e9e7;
+  box-shadow:2px 2px 2px #222020;
+}
+/* Ensure the carousel takes up the full height and width of its container */
+#hero-carousel {
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden;
+}
+
+/* Ensure the carousel items take up the full container space */
+.carousel-item {
+  height: 100%; /* Full height */
+}
+
+/* Ensure the images take up the full container space */
+.c-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Cover the entire container without distortion */
+}
+
+/* Additional styling to ensure no margins or padding cause issues */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.carousel-inner {
+  height: 100%;
+}
+
